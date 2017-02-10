@@ -1,0 +1,56 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.contenido {
+  height: 100%;
+  overflow: hidden;
+  transition: .3s;
+}
+
+.contenido:hover {
+  border: solid white 10px;
+}
+
+.imagen {
+  background-image: url("../images/venon.png");
+  background-size: cover;
+  height: 100%;
+  transition: transform .3s;
+}
+
+.imagen:hover {
+  transform: scale(1.1);
+}
+
+.texto {
+  border: solid black 5px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 100px;
+  left: 100px;
+  bottom: 250px;
+  opacity: 0;
+  transform: rotate(-360deg);
+  transition: 2s;
+}
+
+.texto:hover {
+  transform: rotate(360deg);
+  opacity: 100;
+  background:black;
+}
+
+.texto a{
+  color: white;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 30px;
+  margin: 40px;
+  color: white;
+  font-family: "Montserrat";
+}
